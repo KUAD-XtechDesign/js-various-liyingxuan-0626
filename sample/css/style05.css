@@ -1,0 +1,150 @@
+
+html,body,#contents，.wrapper，#back{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+   
+}
+.login{
+    position: relative;
+    border: none;
+    outline:none;
+    width: 100rem;
+    height: 5rem;
+    background-color:#fff;
+    color: #000;
+    font-size: 1.5rem;
+    box-shadow: 0 8px 40px white;
+    cursor:pointer;
+    transition: .5s;
+    font-family: serif;
+}
+.active.login{
+    width: 5rem;
+    color: transparent;
+}
+
+loading{
+    opacity: 0;
+    transition: .5s;
+    
+}
+.active.loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 40%;
+    display: flex;
+   
+}
+
+.wrapper{
+  
+}
+  img{
+    max-width: 100%;
+  }
+  
+  header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    top: 0;
+  }
+  
+  footer{
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    bottom:0;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  header h1{
+    font-size: 20px;
+  }
+  
+  header ul{
+    display: flex;
+    margin-left: auto;
+  }
+  
+  header ul li{
+    margin-left: 20px;
+  }
+  
+  #contents{
+    overflow: hidden;
+   
+  }
+  
+  #back{
+    background-image: url(../images/粉.png);
+    background-size: cover;
+    background-position: center 100px;
+    top: 0;
+    top:90%;
+    transition: 2s all;
+  }
+  
+  #back.anime{
+    top: 0%;
+  }
+  
+  #person{
+    position: absolute;
+    bottom:100px;
+    max-width: 40%;
+    right: -800px;
+    width: 400px;
+    transition: 0.6s all;
+  }
+  
+  #person.anime{
+    right: 10px;
+  }
+  
+  
+  #car{
+    position: absolute;
+    bottom:100px;
+    max-width: 40%;
+    left: -800px;
+    width: 500px;
+    transition: 0.6s all;
+  }
+  
+  #car.anime{
+    left: 10px;
+  }
+  
+  #food{
+    width: 10%;
+    bottom: 10%;
+    margin-left: -25%;
+    left: 50%;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  
+  #food.anime {
+    /* cssライブラリanimate.cssを利用 */
+    animation: zoomInDown;
+    animation-duration: 1s; 
+    opacity: 1;
+  }
+
+  
+ 
